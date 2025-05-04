@@ -1,6 +1,6 @@
 'use client';
 
-import {Card, Image, Content, TituloCard, Descricao} from '../styles/Trending';
+import * as S from './styles';
 //declara trending
 export type trending = {
   imagem: string; //coloque o caminho da imagem rs
@@ -13,12 +13,12 @@ type Trend = {
 }
 
 export default function TrendingItem ({data}: Trend) { return (
-  <Card>
-    <Image src={data.imagem} alt={data.titulo} />
-    <Content>
-      <TituloCard>{data.titulo}</TituloCard>
-      <Descricao>{data.descricao}</Descricao>
-    </Content>
-  </Card>
+  <S.Card>
+    <S.Image src={data.imagem} alt={data.titulo} />
+    <S.Content>
+      <S.TituloCard>{data.titulo}</S.TituloCard>
+      <S.Descricao>{data.descricao}</S.Descricao>
+    </S.Content>
+  </S.Card>
   );
 }

@@ -1,29 +1,29 @@
 'use client';
 
-import { Container, Titulo } from '../styles/Trending';
-import TrendingItem, { trending } from './TrendingItem';
+import * as S from './styles';
+import TrendingItem, { trending } from '../TrendingItem/index';
 
 const trendingData: trending[] = [
   {
-    imagem: '../../public/assets/images/dogAnonimo.jpg',
+    imagem: 'assets/images/dogAnonimo.jpg',
     titulo: 'Dog muito Drip slc',
     descricao: 'esse cachorro tem o drip, veja o drip desse cachorro, ele tem muito drip',
   },
   {
-    imagem: '/images/imgteste.png',
-    titulo: 'teste1',
-    descricao: 'teste2',
+    imagem: 'assets/images/doRock.jpeg',
+    titulo: 'Por acaso vc é do rock?',
+    descricao: 'do Rock',
   },
   // etc
 ];
 
 export default function Trending() {
   return (
-    <Container>
-      <Titulo>🔥 Pius em alta</Titulo>
+    <S.Container>
+      <S.Titulo>🔥 Pius em alta</S.Titulo>
       {trendingData.map((item, idx) => (
         <TrendingItem key={idx} data={item} />
       ))}
-    </Container>
+    </S.Container>
   );
 }

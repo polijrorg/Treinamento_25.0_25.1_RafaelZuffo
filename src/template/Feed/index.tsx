@@ -1,7 +1,7 @@
 import '../../styles/GlobalStyle';
-import Sidebar from '../../components/Sidebar';
-import Trending from '../../components/Trending';
-import Home from '../../components/page.tsx'
+import Sidebar from '../../components/Sidebar/index';
+import Trending from '../../components/Trending/index';
+import Home from '../../components/Page/index';
 
 export const metadata = {
   title: 'PiuPiuwer',
@@ -12,7 +12,7 @@ export default function RootLayout() {
   return (
     <div style={{ display: 'flex' }}>
       <Sidebar />
-      <div style={{ flex: 1, padding: '1rem' }}><Home/></div>
+      <div style={{ flex: 1}}><Home/></div>
       <Trending />
     </div>
   );

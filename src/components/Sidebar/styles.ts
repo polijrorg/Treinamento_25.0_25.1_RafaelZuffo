@@ -11,7 +11,7 @@ export const SidebarContainer = styled.div`
     padding: 32px 0px;
     flex-direction: column;
     align-items: center;
-//    gap: 200px;
+    gap: 200px;
     flex-shrink: 0;
     border: none;
 `;
@@ -24,6 +24,10 @@ export const Menu = styled.div`
     gap: 40px;
     flex-shrink: 0;
     align-self: stretch;
+`;
+
+export const Menu2 = styled.div`
+
 `;
 
 export const Logo = styled.h1`
@@ -96,6 +100,7 @@ export const SidebarButton = styled.button`
 export const ProfileImage = styled.img`
     width: 64px;
     height: 64px;
+    border-radius: 50%;
     flex-shrink: 0;
 `;
 

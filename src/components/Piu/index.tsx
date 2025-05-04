@@ -1,7 +1,7 @@
 'use client';
 
 import React from "react";
-import { PiuCard, Header, ProfileCircle, Nome, Usuario, Texto, Etc,} from "../styles/Piu";
+import * as S from './styles';
 
 type PiuProps = {
   foto: string; //digite o local da foto
@@ -23,20 +23,20 @@ export default function Piu({
   numero_reposts,
 }: PiuProps) {
   return (
-    <PiuCard>
-      <Header>
-        <ProfileCircle src={foto} />
+    <S.PiuCard>
+      <S.Header>
+        <S.ProfileCircle src={foto} />
         <div>
-          <Nome>{nome}</Nome>
-          <Usuario>@{usuario}</Usuario>
+          <S.Nome>{nome}</S.Nome>
+          <S.Usuario>@{usuario}</S.Usuario>
         </div>
-      </Header>
-      <Texto>{texto}</Texto>
-      <Etc>
+      </S.Header>
+      <S.Texto>{texto}</S.Texto>
+      <S.Etc>
         <span>{numero_comentarios}</span>
         <span>{numero_reposts}</span>
         <span>{curtidas}</span>
-      </Etc>
-    </PiuCard>
+      </S.Etc>
+    </S.PiuCard>
   );
 }
