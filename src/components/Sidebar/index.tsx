@@ -4,7 +4,7 @@ import React from "react";
 import * as S from './styles';
 
 const menubotoes = [
-  { icon: 'assets/images/bx_home.png', label: 'Página Inicial', active: true },
+  { icon: 'assets/images/bx_home.png', label: 'Página Inicial' },
   { icon: 'assets/images/ic_outline-notifications.png', label: 'Notificações' },
   { icon: 'assets/images/jam_messages-alt.png', label: 'Mensagens' },
   { icon: 'assets/images/Cloud_Check.png', label: 'Salvos' },
@@ -17,11 +17,11 @@ export default function Sidebar() {
     <S.SidebarContainer>
       <S.Menu>
          <S.Logo> <img src="assets/images/chick-svgrepo-com.png" /> PIUPIUWER </S.Logo>
-         {menubotoes.map((item, index) => (
          <S.MenuButtons>
+            {menubotoes.map((item, index) => (
             <S.SidebarButton key={index}><img src={item.icon}/> {item.label}</S.SidebarButton>
+            ))}
          </S.MenuButtons>
-         ))}
       </S.Menu>
         <S.Menu2>
             <S.ProfileImage src="assets/images/dogAnonimo.jpg" />

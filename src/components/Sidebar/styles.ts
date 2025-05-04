@@ -27,7 +27,9 @@ export const Menu = styled.div`
 `;
 
 export const Menu2 = styled.div`
-
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 `;
 
 export const Logo = styled.h1`
@@ -45,20 +47,12 @@ export const Logo = styled.h1`
 `;
 
 export const MenuButtons = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
+
 `;
 
 export const SidebarButton = styled.button`
     display: flex;
     height: 57px;
-    padding-right: 16px;
-    align-items: center;
-    gap: 10px;
-    display: flex;
     width: 304px;
     padding: 0px 16px;
     align-items: center;
@@ -68,6 +62,7 @@ export const SidebarButton = styled.button`
     color: var(--Slate-12, #ecedee);
 
     &:hover {
+        cursor: pointer;
         display: flex;
         width: 179px;
         height: 57px;

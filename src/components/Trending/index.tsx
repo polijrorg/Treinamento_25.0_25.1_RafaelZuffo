@@ -20,7 +20,7 @@ const trendingData: trending[] = [
 export default function Trending() {
   return (
     <S.Container>
-      <S.Titulo>🔥 Pius em alta</S.Titulo>
+      <S.Titulo><img src='assets/images/Frame.png'/> Pius em alta</S.Titulo>
       {trendingData.map((item, idx) => (
         <TrendingItem key={idx} data={item} />
       ))}
