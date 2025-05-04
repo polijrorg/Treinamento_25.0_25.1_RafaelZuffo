@@ -1,7 +1,7 @@
-import '../../styles/GlobalStyle';
 import Sidebar from '../../components/Sidebar/index';
 import Trending from '../../components/Trending/index';
 import Home from '../../components/Page/index';
+import * as S from './styles';
 
 export const metadata = {
   title: 'PiuPiuwer',
@@ -10,10 +10,10 @@ export const metadata = {
 
 export default function RootLayout() {
   return (
-    <div style={{ display: 'flex' }}>
+    <S.Container>
       <Sidebar />
       <div style={{ flex: 1}}><Home/></div>
       <Trending />
-    </div>
+    </S.Container>
   );
 }

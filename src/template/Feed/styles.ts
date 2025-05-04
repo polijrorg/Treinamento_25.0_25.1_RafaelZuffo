@@ -12,19 +12,12 @@ const fadeIn = keyframes`
 `;
 
 export const Container = styled.div`
+    background: var(--Slate-1, #151718);
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    width: 100%;
-    padding: ${({ theme }) => `${theme.space[5]}px`};
-    flex-direction: column;
-    background: linear-gradient(
-        135deg,
-        ${({ theme }) => theme.colors.sky1} 0%,
-        ${({ theme }) => theme.colors.sky3} 100%
-    );
-    overflow-x: hidden;
+    width: 100vw;
+    flex-direction: row;
 
     @media (max-width: 768px) {
         padding: ${({ theme }) => `${theme.space[3]}px`};

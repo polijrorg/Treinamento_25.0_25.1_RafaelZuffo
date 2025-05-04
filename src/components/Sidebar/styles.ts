@@ -12,7 +12,6 @@ export const SidebarContainer = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 200px;
-    flex-shrink: 0;
     border: none;
 `;
 
