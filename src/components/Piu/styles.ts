@@ -1,44 +1,104 @@
 import styled from 'styled-components';
 
 export const PiuCard = styled.div`
-  background-color: #1c1c1e;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 12px;
-  color: #fff;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+    border-radius: 16px;
+    background: var(--Slate-3, #202425);
 `;
 
 export const Header = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 `;
 
 export const ProfileCircle = styled.img`
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #555;
-  margin-right: 12px;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 48px;
+    border: 4px solid var(--Institutional-Blue-Fade, #004c97);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    // background-color: #555;
+    // margin-right: 12px;
+`;
+
+export const ProfileName = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
 `;
 
 export const Nome = styled.div`
-  font-weight: bold;
+    color: var(--Slate-12, #ecedee);
+    text-align: center;
+
+    /* Subtitle/Bold */
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 `;
 
 export const Usuario = styled.div`
-  font-size: 0.85rem;
-  color: #aaa;
+    color: var(--Slate-12, #ecedee);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Body/Body Normal */
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.5px;
 `;
 
 export const Texto = styled.div`
-  margin: 8px 0;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+
+    color: var(--Slate-12, #ecedee);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 `;
 
 export const Etc = styled.div`
-  display: flex;
-  justify-content: space-around;
-  font-size: 0.9rem;
-  color: #ccc;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    color: var(--Slate-12, #ecedee);
+
+    /* Subtitle/Normal */
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 `;
 
+export const botao = styled.div`
+    &:hover {
+        cursor: pointer;
+    }
+`;

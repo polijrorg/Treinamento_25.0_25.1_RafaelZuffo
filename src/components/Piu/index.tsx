@@ -26,16 +26,16 @@ export default function Piu({
     <S.PiuCard>
       <S.Header>
         <S.ProfileCircle src={foto} />
-        <div>
+        <S.ProfileName>
           <S.Nome>{nome}</S.Nome>
           <S.Usuario>@{usuario}</S.Usuario>
-        </div>
+        </S.ProfileName>
       </S.Header>
       <S.Texto>{texto}</S.Texto>
       <S.Etc>
-        <span>{numero_comentarios}</span>
-        <span>{numero_reposts}</span>
-        <span>{curtidas}</span>
+        <S.botao><img src='/assets/images/Arrow_Reload_02.svg'/>{numero_reposts}</S.botao>
+        <S.botao><img src='/assets/images/Chat_Circle.svg'/>{numero_comentarios}</S.botao>
+        <S.botao><img src='/assets/images/Heart_02.svg'/>{curtidas}</S.botao>
       </S.Etc>
     </S.PiuCard>
   );
