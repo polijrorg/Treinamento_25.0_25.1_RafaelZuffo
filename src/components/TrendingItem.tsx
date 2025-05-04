@@ -1,6 +1,6 @@
 'use client';
 
-import {Card, Image, Content, TituloCard, Descricao} from '@/styles/Trending';
+import {Card, Image, Content, TituloCard, Descricao} from '../styles/Trending';
 //declara trending
 export type trending = {
   imagem: string; //coloque o caminho da imagem rs

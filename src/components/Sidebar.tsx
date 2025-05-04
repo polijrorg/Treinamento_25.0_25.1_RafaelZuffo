@@ -18,7 +18,7 @@ export default function Sidebar() {
     <SidebarContainer>
       <Logo>PIUPIUWER</Logo>
       {menubotoes.map((item, index) => (
-        <SidebarButton key={index}>{item.icon} {item.label}</SidebarButton>
+        <SidebarButton key={index}><img src={item.icon}/> {item.label}</SidebarButton>
       ))}
     </SidebarContainer>
   )

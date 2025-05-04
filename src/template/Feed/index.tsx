@@ -1,4 +1,4 @@
-import '@/styles/GlobalStyle';
+import '../../styles/GlobalStyle';
 import Sidebar from '../../components/Sidebar';
 import Trending from '../../components/Trending';
 

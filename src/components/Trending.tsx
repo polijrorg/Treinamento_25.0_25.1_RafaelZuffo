@@ -1,6 +1,6 @@
 'use client';
 
-import { Container, Titulo } from '@/styles/Trending';
+import { Container, Titulo } from '../styles/Trending';
 import TrendingItem, { trending } from './TrendingItem';
 
 const trendingData: trending[] = [

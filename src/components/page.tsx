@@ -1,6 +1,6 @@
 'use client';
 
-import Piu from "@/components/Piu";
+import Piu from "../components/Piu";
 
 export default function Home() {
   return (
