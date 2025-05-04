@@ -1,40 +1,105 @@
 import styled from 'styled-components';
 
 export const SidebarContainer = styled.div`
-  width: 250px;
-  height: 100vh;
-  background-color: #1A1D1E;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    border-right: 1px solid var(--Slate-8, #4c5155);
+    background: var(--Slate-2, #1a1d1e);
+
+    display: flex;
+    width: 320px;
+    height: 100%;
+    padding: 32px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px;
+    flex-shrink: 0;
+    border: none;
+`;
+
+export const Menu = styled.div`
+    display: flex;
+    height: 528px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+    align-self: stretch;
 `;
 
 export const Logo = styled.h1`
-  color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    color: var(--Slate-12, #ecedee);
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6px;
+`;
+
+export const MenuButtons = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
 `;
 
 export const SidebarButton = styled.button`
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  padding: 0.8rem 1rem;
-  border-radius: 12px;
-  cursor: pointer;
+    display: flex;
+    height: 57px;
+    padding-right: 16px;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    width: 304px;
+    padding: 0px 16px;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    color: var(--Slate-12, #ecedee);
 
-  &:hover {
-    background-color: #1f2937;
-  }
+    &:hover {
+        display: flex;
+        width: 179px;
+        height: 57px;
+        width: 304px;
+        padding: 0px 16px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 0px 80px 80px 0px;
+        background: var(--Indigo-9, #3e63dd);
+    }
 
-  & svg {
-    font-size: 1.2rem;
-  }
+    & svg {
+        display: flex;
+        width: 179px;
+        height: 57px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: var(--Slate-12, #ecedee);
+
+        /* Subtitle/Bold */
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
 `;
 
+export const ProfileImage = styled.img`
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+`;
+
+export const Logout = styled.img`
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+`;

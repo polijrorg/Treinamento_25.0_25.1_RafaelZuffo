@@ -5,7 +5,7 @@ import TrendingItem, { trending } from './TrendingItem';
 
 const trendingData: trending[] = [
   {
-    imagem: '/images/dogAnonimo.jpg',
+    imagem: '../../public/assets/images/dogAnonimo.jpg',
     titulo: 'Dog muito Drip slc',
     descricao: 'esse cachorro tem o drip, veja o drip desse cachorro, ele tem muito drip',
   },

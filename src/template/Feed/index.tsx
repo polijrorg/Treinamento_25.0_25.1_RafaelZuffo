@@ -1,22 +1,19 @@
 import '../../styles/GlobalStyle';
 import Sidebar from '../../components/Sidebar';
 import Trending from '../../components/Trending';
+import Home from '../../components/page.tsx'
 
 export const metadata = {
   title: 'PiuPiuwer',
   description: 'Rede social de pius',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout() {
   return (
-    <html lang="pt-br">
-      <body>
-        <div style={{ display: 'flex' }}>
-          <Sidebar />
-          <main style={{ flex: 1, padding: '1rem' }}>{children}</main>
-          <Trending />
-        </div>
-      </body>
-    </html>
+    <div style={{ display: 'flex' }}>
+      <Sidebar />
+      <div style={{ flex: 1, padding: '1rem' }}><Home/></div>
+      <Trending />
+    </div>
   );
 }
