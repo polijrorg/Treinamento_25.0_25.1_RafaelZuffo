@@ -116,7 +116,7 @@ export const Etc = styled.div`
     line-height: normal;
 `;
 
-export const botao = styled.div`
+export const Botao = styled.div`
     &:hover {
         cursor: pointer;
     }

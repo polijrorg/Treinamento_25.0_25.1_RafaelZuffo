@@ -9,8 +9,8 @@ type PiuProps = {
     usuario: string;
     texto: string;
     curtidas: number;
-    numero_comentarios: number;
-    numero_reposts: number;
+    numerocomentarios: number;
+    numeroreposts: number;
 };
 
 export default function Piu({
@@ -19,8 +19,8 @@ export default function Piu({
     usuario,
     texto,
     curtidas,
-    numero_comentarios,
-    numero_reposts
+    numerocomentarios,
+    numeroreposts
 }: PiuProps) {
     return (
         <S.PiuCard>
@@ -36,17 +36,17 @@ export default function Piu({
             </S.Header>
             <S.Texto>{texto}</S.Texto>
             <S.Etc>
-                <S.botao>
-                    <img src="/assets/images/Arrow_Reload_02.svg" />{' '}
-                    {numero_reposts}
-                </S.botao>
-                <S.botao>
-                    <img src="/assets/images/Chat_Circle.svg" />{' '}
-                    {numero_comentarios}
-                </S.botao>
-                <S.botao>
-                    <img src="/assets/images/Heart_02.svg" /> {curtidas}
-                </S.botao>
+                <S.Botao>
+                    <img src="/assets/images/Arrow_Reload_02.svg" alt="" />{' '}
+                    {numeroreposts}
+                </S.Botao>
+                <S.Botao>
+                    <img src="/assets/images/Chat_Circle.svg" alt="" />{' '}
+                    {numerocomentarios}
+                </S.Botao>
+                <S.Botao>
+                    <img src="/assets/images/Heart_02.svg" alt="" /> {curtidas}
+                </S.Botao>
             </S.Etc>
         </S.PiuCard>
     );

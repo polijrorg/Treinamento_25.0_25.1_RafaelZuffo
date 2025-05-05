@@ -21,12 +21,16 @@ export default function Sidebar() {
             <S.Menu>
                 <S.Logo>
                     {' '}
-                    <img src="assets/images/chick-svgrepo-com.png" /> PIUPIUWER{' '}
+                    <img
+                        src="assets/images/chick-svgrepo-com.png"
+                        alt=""
+                    />{' '}
+                    PIUPIUWER{' '}
                 </S.Logo>
                 <S.MenuButtons>
-                    {menubotoes.map((item, index) => (
-                        <S.SidebarButton key={index}>
-                            <img src={item.icon} /> {item.label}
+                    {menubotoes.map((item) => (
+                        <S.SidebarButton>
+                            <img src={item.icon} alt="" /> {item.label}
                         </S.SidebarButton>
                     ))}
                 </S.MenuButtons>

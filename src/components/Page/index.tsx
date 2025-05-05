@@ -13,27 +13,17 @@ const pius = [
         usuario: 'dogA',
         texto: 'NÃO há imoralidade em furar a fila do bandejão...',
         curtidas: 8,
-        numero_comentarios: 5,
-        numero_reposts: 3
+        numerocomentarios: 5,
+        numeroreposts: 3
     },
     {
         foto: 'assets/images/dogAnonimo.jpg',
-        nome: 'Gato',
-        usuario: 'souumgato',
-        texto: 'sou um gato',
-        curtidas: 3,
-        numero_comentarios: 1,
-        numero_reposts: 0
-    },
-
-    {
-        foto: 'assets/images/dogAnonimo.jpg',
-        nome: 'Gato',
-        usuario: 'souumgato',
-        texto: 'sou um gato',
-        curtidas: 3,
-        numero_comentarios: 1,
-        numero_reposts: 0
+        nome: 'AtumalacaGames',
+        usuario: 'tumalaca69',
+        texto: 'atumalaca',
+        curtidas: 69,
+        numerocomentarios: 69,
+        numeroreposts: 69
     },
 
     {
@@ -42,8 +32,8 @@ const pius = [
         usuario: 'souumgato',
         texto: 'sou um gato',
         curtidas: 3,
-        numero_comentarios: 1,
-        numero_reposts: 0
+        numerocomentarios: 1,
+        numeroreposts: 0
     },
 
     {
@@ -52,8 +42,8 @@ const pius = [
         usuario: 'souumgato',
         texto: 'sou um gato',
         curtidas: 3,
-        numero_comentarios: 1,
-        numero_reposts: 0
+        numerocomentarios: 1,
+        numeroreposts: 0
     },
 
     {
@@ -62,8 +52,18 @@ const pius = [
         usuario: 'souumgato',
         texto: 'sou um gato',
         curtidas: 3,
-        numero_comentarios: 1,
-        numero_reposts: 0
+        numerocomentarios: 1,
+        numeroreposts: 0
+    },
+
+    {
+        foto: 'assets/images/dogAnonimo.jpg',
+        nome: 'Gato',
+        usuario: 'souumgato',
+        texto: 'sou um gato',
+        curtidas: 3,
+        numerocomentarios: 1,
+        numeroreposts: 0
     }
 ];
 
@@ -82,16 +82,15 @@ export default function Home() {
             <SearchBar onSearch={setSearchTerm} />
             <MakePiu />
             <S.Linha />
-            {filteredPius.map((piu, index) => (
+            {filteredPius.map((piu) => (
                 <Piu
-                    key={index}
                     foto={piu.foto}
                     nome={piu.nome}
                     usuario={piu.usuario}
                     texto={piu.texto}
                     curtidas={piu.curtidas}
-                    numero_comentarios={piu.numero_comentarios}
-                    numero_reposts={piu.numero_reposts}
+                    numerocomentarios={piu.numerocomentarios}
+                    numeroreposts={piu.numeroreposts}
                 />
             ))}
         </S.Background>

@@ -28,7 +28,6 @@ export const Container = styled.div`
     ::-webkit-scrollbar-thumb:hover {
         background: #a0a0a0;
     }
-
 `;
 
 export const Titulo = styled.div`

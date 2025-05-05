@@ -57,9 +57,9 @@ export const NewPiu = styled.textarea`
 
 export const Linha = styled.div`
     width: 100%;
-    color: #4C5155;
+    color: #4c5155;
     border: none;
-    border-top: 1px solid #4C5155;
+    border-top: 1px solid #4c5155;
     // stroke-width: 20px;
     // height: 2px;
     // background-color: red;
