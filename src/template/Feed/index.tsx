@@ -12,7 +12,7 @@ export default function RootLayout() {
   return (
     <S.Container>
       <Sidebar />
-      <div style={{ flex: 1}}><Home/></div>
+      <Home/>
       <Trending />
     </S.Container>
   );

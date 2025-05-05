@@ -13,8 +13,16 @@ export const PiuCard = styled.div`
 
 export const Header = styled.div`
     display: flex;
-    align-items: center;
-    gap: 8px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+`;
+
+export const Lixeira = styled.img`
+    align: right;
+    &:hover {
+        cursor: pointer;
+    }
 `;
 
 export const ProfileCircle = styled.img`
@@ -31,12 +39,23 @@ export const ProfileCircle = styled.img`
     // margin-right: 12px;
 `;
 
-export const ProfileName = styled.div`
+export const ProfileNames = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 8px;
+`;
+
+export const ProfileName = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: flex-start;
+    // gap: 8px;
 `;
 
 export const Nome = styled.div`

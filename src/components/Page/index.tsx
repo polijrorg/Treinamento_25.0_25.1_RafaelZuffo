@@ -3,6 +3,7 @@
 import * as S from './styles';
 import Piu from '../Piu/index';
 import SearchBar from '../SearchBar/index';
+import MakePiu from '../MakePiu/index';
 import { useState } from 'react';
 
 const pius = [
@@ -78,7 +79,8 @@ export default function Home() {
   return (
       <S.Background>
         <SearchBar onSearch={setSearchTerm} />
-        <S.NewPiu placeholder="Quero dar um piu..." />
+        <MakePiu />
+        <S.Linha></S.Linha>
         {filteredPius.map((piu, index) => (
           <Piu
             key={index}
