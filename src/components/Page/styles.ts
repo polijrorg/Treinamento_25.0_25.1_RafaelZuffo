@@ -56,9 +56,13 @@ export const NewPiu = styled.textarea`
 `;
 
 export const Linha = styled.div`
-    stroke-width: 20px;
-    height: 2px;
-    background-color: red;
-    //    stroke: var(--Slate-8, #4c5155);
-    align-self: stretch;
+    width: 100%;
+    color: #4C5155;
+    border: none;
+    border-top: 1px solid #4C5155;
+    // stroke-width: 20px;
+    // height: 2px;
+    // background-color: red;
+    // //    stroke: var(--Slate-8, #4c5155);
+    // align-self: stretch;
 `;

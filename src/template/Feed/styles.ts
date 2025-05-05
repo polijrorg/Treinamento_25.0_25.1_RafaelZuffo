@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.div`
     background: var(--Slate-1, #151718);
     min-height: 100%;
@@ -13,5 +12,3 @@ export const Container = styled.div`
         padding: ${({ theme }) => `${theme.space[3]}px`};
     }
 `;
-
-

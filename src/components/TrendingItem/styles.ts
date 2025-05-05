@@ -5,8 +5,8 @@ export const Card = styled.div`
     gap: 0.75rem;
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #4C5155;
-    border-top: 1px solid #4C5155;
+    border-bottom: 1px solid #4c5155;
+    border-top: 1px solid #4c5155;
 `;
 
 export const Image = styled.img`

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const SidebarContainer = styled.div`
     border-right: 1px solid var(--Slate-8, #4c5155);
     background: var(--Slate-2, #1a1d1e);
-//    position: fixed;
+    //    position: fixed;
 
     display: flex;
     width: 320px;
@@ -45,9 +45,7 @@ export const Logo = styled.h1`
     letter-spacing: 6px;
 `;
 
-export const MenuButtons = styled.div`
-
-`;
+export const MenuButtons = styled.div``;
 
 export const SidebarButton = styled.button`
     display: flex;

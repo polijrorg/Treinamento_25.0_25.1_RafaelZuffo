@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const SidebarContainer = styled.div`
     border-right: 1px solid var(--Slate-8, #4c5155);
     background: var(--Slate-2, #1a1d1e);
-//    position: fixed;
+    //    position: fixed;
 
     display: flex;
     width: 320px;
@@ -11,7 +11,7 @@ export const SidebarContainer = styled.div`
     padding: 32px 0px;
     flex-direction: column;
     align-items: center;
-//    gap: 200px;
+    //    gap: 200px;
     flex-shrink: 0;
     border: none;
 `;

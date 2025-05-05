@@ -9,6 +9,26 @@ export const Container = styled.div`
     background: var(--Slate-2, #1a1d1e);
     max-width: 336px;
     color: white;
+    overflow-y: scroll;
+    /* Scrollbar estilizada */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #2c2c2c; /* Fundo da barra */
+        border-radius: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #7f7f7f; /* Cor da alça */
+        border-radius: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #a0a0a0;
+    }
+
 `;
 
 export const Titulo = styled.div`
@@ -22,5 +42,5 @@ export const Titulo = styled.div`
     font-weight: 700;
     line-height: normal;
     padding-bottom: 24px;
-    border-bottom: 1px solid #4C5155;
+    border-bottom: 1px solid #4c5155;
 `;

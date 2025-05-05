@@ -1,11 +1,11 @@
 'use client';
 
-import * as S from './styles'
+import * as S from './styles';
 
 export default function MakePiu() {
     return (
         <S.MesDiv>
-            <S.MesText>Quero dar um piu...</S.MesText>
+            <S.MesText placeholder='Quero dar um piu...'/>
             <S.EmojiDiv>
                 <S.EmojiDiv2>
                     <S.FotoLogo src="assets\images\Image_02.png" />
